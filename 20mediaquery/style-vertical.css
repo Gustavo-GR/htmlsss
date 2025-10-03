@@ -1,0 +1,81 @@
+body{
+    width: 98vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav{
+    display: none;
+}
+
+section{
+    border: 1px solid blueviolet;
+    padding: 10px; ;
+
+}
+
+article{
+    margin-top: 10px;
+    border: 1px solid burlywood;
+    padding: 10px;
+
+}
+
+div#imagem{
+    margin-top: 10px;
+    background-image: url();
+    background-size: contain;
+    height: 90vh;
+}
+
+h1{
+    font-size: 40x;
+    color: beige;
+    text-align: center;
+    background-color: chartreuse;
+}
+
+.lista{
+    background: yellow;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(red, green, blue, alpha);
+}
+
+.titulo{
+    margin-top: -3px;
+    content: III;
+    transform: rotate(90deg);
+    float: right;
+    transition: tranform  .3s ease;
+font-family: Arial, Helvetica, sans-serif ;}
+
+.conteudo{
+    padding: 10px;
+    color: chocolate;
+    font-family:Helvetica;
+    font-size: .875em;
+    line-height: 1.4em;
+    display: none;
+    background-color: yellowgreen;
+}
+
+.a3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.a2{
+    display: none;
+}
+
+.a2 :checked + .a1 .conteudo{
+    display: inline-block;
+}
+.a2 :checked + .a1  .titulo   ::after{
+    transform: rotate(360deg) scale(1.08);
+    content: "x";
+}

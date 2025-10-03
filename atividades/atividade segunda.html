@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            background-color: aquamarine;
+            gap: 5px;
+            height: 100vh;
+        }
+
+        header {
+            grid-column: 2/12;
+            grid-row: 1;
+            background-color: rgb(21, 98, 73);
+        }
+
+        section {
+            grid-column: 1;
+            grid-row: 1/4;
+            background-color: rgb(223, 14, 157);
+        }
+
+        nav {
+            grid-column: 2/7;
+            grid-row: 2;
+            background-color: rgb(58, 138, 152);
+        }
+
+        #box1 {
+            grid-column: 7/12;
+            grid-row: 2;
+            background-color: rgb(58, 152, 108);
+        }
+
+        aside {
+            grid-column: 2/4;
+            grid-row: 3;
+            background-color: rgb(16, 15, 2);
+        }
+
+        article {
+            grid-column: 4/7;
+            grid-row: 3;
+            background-color: rgb(212, 31, 31);
+        }
+
+        #box2 {
+            grid-column: 7/10;
+            grid-row: 3;
+            background-color: rgb(115, 117, 117);
+        }
+
+        #box3 {
+            grid-column: 1/4;
+            grid-row: 4;
+            background-color: rgb(103, 205, 176);
+        }
+
+        #box4 {
+            grid-column: 4/10;
+            grid-row: 4;
+            background-color: rgba(60, 168, 136, 0.801);
+        }
+
+        #box5 {
+            grid-column: 1/4;
+            grid-row: 5/7;
+            background-color: rgb(214, 207, 103);
+        }
+
+        #box6 {
+            grid-column: 4/7;
+            grid-row: 5/7;
+            background-color: rgb(152, 58, 135);
+        }
+
+        #box7 {
+            grid-column: 7/10;
+            grid-row: 5/7;
+            background-color: rgb(35, 180, 71);
+        }
+
+        #box8 {
+            grid-column: 12;
+            grid-row: 1/4;
+            background-color: rgb(29, 67, 150);
+        }
+
+        #box9 {
+            grid-column: 10/12;
+            grid-row: 3;
+            background-color: rgb(9, 80, 9);
+        }
+
+        #box10 {
+            grid-column: 10;
+            grid-row: 4;
+            background-color: rgb(131, 165, 131);
+        }
+
+        #box11 {
+            grid-column: 11;
+            grid-row: 4;
+            background-color: rgb(69, 78, 79);
+        }
+
+        #box12 {
+            grid-column: 12;
+            grid-row: 4;
+            background-color: rgb(29, 86, 29);
+        }
+
+        #box13 {
+            grid-column: 10/13;
+            grid-row: 5;
+            background-color: rgb(61, 50, 98);
+        }
+    </style>
+</head>
+<body>
+    <nav></nav>
+    <header></header>
+    <section></section>
+    <article></article>
+    <aside></aside>
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+    <div id="box4"></div>
+    <div id="box5"></div>
+    <div id="box6"></div>
+    <div id="box7"></div>
+    <div id="box8"></div>
+    <div id="box9"></div>
+    <div id="box10"></div>
+    <div id="box11"></div>
+    <div id="box12"></div>
+    <div id="box13"></div>
+</body>
+</html>
